@@ -64,7 +64,7 @@ public class CustomerService {
 		if (customer.isPresent()) {
 			Customer c1 = customer.get();
 			customerRepository.delete(c1);
-			return "Successfully deleted";
+			return "Successfully deleted Customer with id "+ id;
 		} else {
 			throw new CustomerNotFound("Customer Not Found");
 		}
